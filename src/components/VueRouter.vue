@@ -1,20 +1,6 @@
 <template>
   <Slide>
-    <h1>Vue Router</h1>
-    <ul>
-      <li>¿Qué es?</li>
-      <li>¿Para que sirve?</li>
-      <li>¿Cuándo lo necesito?</li>
-    </ul>
-  </Slide>
-
-  <Slide>
-
-    <h2>¿Qué es?</h2>
-    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-      &ldquo;Es un sistema para crear rutas, utilizado para crear las páginas SPA (Single Page Application).&rdquo;
-    </blockquote>
-
+    <img :src="VueRouterLogo" alt="Vue router">
   </Slide>
 
   <Slide>
@@ -26,6 +12,9 @@
     </div>
 
     <aside class="notes">
+      <div>
+        Es un sistema para crear rutas, utilizado para crear las páginas SPA (Single Page Application)
+      </div>
       <div>Código postal Adeje: 38670</div>
       <div>Código postal Madrid: 28001</div>
     </aside>
@@ -43,6 +32,7 @@
 </template>
 
 <script>
+import VueRouterLogo from "../assets/images/vueRouterLogo.png";
 import SpaDiagram from "./../assets/images/spaDiagram.jpg"
 import Slide from "./Slide";
 import Code from "./Code";
@@ -57,16 +47,16 @@ export default {
     const vueRouterCode = [
       {
         title: "Instalación",
-        content: `npm install vue-router@4`,
+        content: `npm install vue-router@4 --save`,
         lineNumber: ""
       },
       {
         title: "/src/router/index.js",
         content: `
         import { createWebHistory, createRouter } from "vue-router";
-        import Home from "@/views/Home.vue";
-        import Category from "@/views/Category.vue";
-        import MyProducts from "@/views/MyProducts.vue";
+        import Home from "@/components/Home.vue";
+        import Category from "@/components/Category.vue";
+        import MyProducts from "@/components/MyProducts.vue";
 
         const routes = [
           {
@@ -129,7 +119,7 @@ export default {
         lineNumber: "|3-5|6-8|9-11|12-14|16|"
       },
       {
-        title: "/view/category.vue",
+        title: "src/components/category.vue",
         content: `
           <template>
               <div
@@ -152,7 +142,9 @@ export default {
               }
             },
             setup(props) {
-              const products = computed(() => fetch("api/v1/categories/" + props.id));
+              const products = computed(() => 
+                fetch("api/v1/categories/" + props.id)
+                  .then((data) => data.json());
               return {
                 products
               }
@@ -165,6 +157,7 @@ export default {
 
     return {
       vueRouterCode,
+      VueRouterLogo,
       SpaDiagram
     }
   }

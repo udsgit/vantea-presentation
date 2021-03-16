@@ -1,35 +1,60 @@
 <template>
   <Slide>
-    <img
-        class="inline-block w-80"
-        :src="Vantea">
+    <img class="inline-block w-80" :src="Vantea"/>
     <h1>Vantea Smart</h1>
   </Slide>
 
   <Slide>
-    <h3>¿Quiénes somos?</h3>
-    <img
-        class="rounded-full"
-        :src="Emmanuel"
-    >
+    <h1>¿Quiénes somos?</h1>
   </Slide>
+
+  <Contact
+      full-name="Emmanuel González A."
+      job-title="Junior Web Developer"
+      :image="Emmanuel"
+      linkedin-name="emagleza"
+      linkedin-url="https://www.linkedin.com/in/emagleza/"
+      git-hub-name="udsgit"
+      git-hub-url="https://github.com/udsgit"
+  />
+
+  <Slide>
+    <h1>¿De qué vamos a hablar?</h1>
+  </Slide>
+
+  <Slide>
+    <ol>
+      <li>Tailwind</li>
+      <li>Shopify</li>
+      <li>Vue 3 Composition Api</li>
+      <li>Vue Router</li>
+      <li>Vuex</li>
+    </ol>
+  </Slide>
+
 </template>
 
 <script>
+import LinkedinLogo from "./../assets/images/linkedin-logo.png";
+import GitHubLogo from "./../assets/images/github-logo.png";
 import Emmanuel from "./../assets/images/emmanuel.jpeg";
 import Vantea from "./../assets/images/vantea.png";
 import Slide from "./Slide";
+import Contact from "./Contact";
 
 export default {
   name: "Introduction",
   components: {
-    Slide
+    Slide,
+    Contact
   },
-  setup(){
+  setup() {
     return {
       Vantea,
-      Emmanuel
-    }
-  }
-}
+      Emmanuel,
+      GitHubLogo,
+      LinkedinLogo
+    };
+  },
+};
 </script>
