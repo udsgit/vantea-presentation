@@ -1,11 +1,6 @@
 <template>
   <Slide>
     <h1>Shopify</h1>
-    <ul>
-      <li>¿Qué es?</li>
-      <li>¿Para que sirve?</li>
-      <li>¿Cuándo lo necesito?</li>
-    </ul>
   </Slide>
 
   <Slide>
