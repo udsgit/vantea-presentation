@@ -18,6 +18,16 @@
       git-hub-url="https://github.com/udsgit"
   />
 
+  <Contact
+      full-name="Agustín T. Rocha."
+      job-title="Junior Web Developer"
+      :image="Emmanuel"
+      linkedin-name="emagleza"
+      linkedin-url="https://www.linkedin.com/in/emagleza/"
+      git-hub-name="udsgit"
+      git-hub-url="https://github.com/udsgit"
+  />
+
   <Slide>
     <h1>¿De qué vamos a hablar?</h1>
   </Slide>
@@ -29,6 +39,7 @@
       <li>Vue 3 Composition Api</li>
       <li>Vue Router</li>
       <li>Vuex</li>
+      <li>Consejos, recomendaciones y dudas</li>
     </ol>
   </Slide>
 
