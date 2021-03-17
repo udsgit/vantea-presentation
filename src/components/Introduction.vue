@@ -19,13 +19,13 @@
   />
 
   <Contact
-      full-name="Agustín T. Rocha."
+      full-name="Agustín T. Rocha"
       job-title="Junior Web Developer"
-      :image="Emmanuel"
-      linkedin-name="emagleza"
-      linkedin-url="https://www.linkedin.com/in/emagleza/"
-      git-hub-name="udsgit"
-      git-hub-url="https://github.com/udsgit"
+      :image="Agustin"
+      linkedin-name="agustrocha"
+      linkedin-url="https://www.linkedin.com/in/agustrocha/"
+      git-hub-name="agustrocha"
+      git-hub-url="https://github.com/agustrocha"
   />
 
   <Slide>
@@ -49,6 +49,7 @@
 import LinkedinLogo from "./../assets/images/linkedin-logo.png";
 import GitHubLogo from "./../assets/images/github-logo.png";
 import Emmanuel from "./../assets/images/emmanuel.jpeg";
+import Agustin from "./../assets/images/Agus.jpg";
 import Vantea from "./../assets/images/vantea.png";
 import Slide from "./Slide";
 import Contact from "./Contact";
@@ -61,11 +62,12 @@ export default {
   },
   setup() {
     return {
-      Vantea,
-      Emmanuel,
+      LinkedinLogo,
       GitHubLogo,
-      LinkedinLogo
-    };
+      Emmanuel,
+      Agustin,
+      Vantea
+    }
   },
 };
 </script>

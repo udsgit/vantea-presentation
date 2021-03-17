@@ -1,9 +1,5 @@
 <template>
   <Slide>
-    <h1>Summary 📝</h1>
-  </Slide>
-
-  <Slide>
     <h1>Gracias</h1>
   </Slide>
 </template>

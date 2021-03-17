@@ -1,11 +1,6 @@
 <template>
   <Slide>
     <h1>Tailwind</h1>
-    <ul>
-      <li>¿Qué es?</li>
-      <li>¿Para que sirve?</li>
-      <li>¿Cuándo lo necesito?</li>
-    </ul>
   </Slide>
 
   <Slide>
@@ -19,6 +14,12 @@
       <div>--- Sitios responsive</div>
       <div>--- Mayor conocimiento de CSS</div>
     </aside>
+  </Slide>
+
+  <Slide>
+    <div class="flex justify-center items-center">
+      <img :src="TWvsBT" alt="BT vs TW"/>
+    </div>
   </Slide>
 
   <Code
@@ -58,7 +59,7 @@
 </template>
 
 <script>
-import SpaDiagram from "./../assets/images/spaDiagram.jpg"
+import TWvsBT from "./../assets/images/TWvsBT.png"
 import Slide from "./Slide";
 import Code from "./Code";
 
@@ -85,8 +86,10 @@ export default {
       title: "Muestra de codigo",
       content: `
       <template>
-        <div class="py-3 px-8 bg-green-500 text-center cursor-pointer rounded-xl">
-          <p class="text-center text-white font-semibold uppercase">
+        <div class="py-3 px-8 bg-green-500
+            text-center cursor-pointer rounded-xl">
+          <p class="text-center text-white
+            font-semibold uppercase">
             De lujo
           </p>
         </div>
@@ -190,7 +193,7 @@ export default {
       twInstalation,
       twCodeMuestra,
       twConfig,
-      SpaDiagram
+      TWvsBT
     }
   }
 }
