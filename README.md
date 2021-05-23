@@ -1,6 +1,6 @@
 # **Vantea presentation**
 
-It is a presentation of a talk created with JS 📚☝️
+It is a presentation of a talk created with JS 🗣️📺🧑‍🎓
 
 ## **Table of contents**
 
