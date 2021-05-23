@@ -28,9 +28,9 @@ You can try it using the [Demo](https://vantea-presentation.netlify.app/)
 
 ## **Screenshots**
 
-> <img src="images_repo/emmanuel.jpg" width="300"/><br><i>Index</i>
+> <img src="images_repo/emmanuel.jpg" width="300"/><br><i>Contact slide</i>
 
-> <img src="images_repo/composition-api.jpg" width="300"/><br><i>Dynamic route</i>
+> <img src="images_repo/composition-api.jpg" width="300"/><br><i>Composition Api Example slide</i>
 
 ## **Technologies**
 
